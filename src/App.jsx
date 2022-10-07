@@ -13,9 +13,9 @@ const App = () => {
   return (
     <Routes>
       <Route index element={<Home user={user} />} />
-      <Route path="/products/:category" element={<PorductList />} />
-      <Route path="/product/:id" element={<Product />} />
-      <Route path="/cart" element={<Cart />} />
+      <Route path="/products/:category" element={<PorductList user={user} />} />
+      <Route path="/product/:id" element={<Product user={user} />} />
+      <Route path="/cart" element={<Cart user={user} />} />
       <Route
         path="/login"
         element={user ? <Navigate replace to="/" /> : <Login />}

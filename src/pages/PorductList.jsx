@@ -37,7 +37,7 @@ const Select = styled.select`
 
 const Option = styled.option``;
 
-const PorductList = () => {
+const PorductList = ({ user }) => {
   const location = useLocation();
   const cat = location.pathname.split("/")[2];
   const [filters, setFilters] = useState({});
@@ -53,7 +53,7 @@ const PorductList = () => {
 
   return (
     <Container>
-      <Navbar />
+      <Navbar user={user} />
       <Announcement />
       <Title>{cat}</Title>
       <FilterContainer>

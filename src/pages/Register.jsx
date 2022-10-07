@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Navbar from "../components/Navbar";
 import styled from "styled-components";
 import axios from "axios";
 import { Link } from "react-router-dom";
@@ -15,8 +16,7 @@ const Container = styled.div`
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
     ),
-    url("https://images.pexels.com/photos/6984661/pexels-photo-6984661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
-      center;
+    url("https://wallpaperaccess.com/full/51363.jpg") center;
 `;
 
 const SignupContainer = styled.div`

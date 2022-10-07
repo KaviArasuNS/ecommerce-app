@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Navbar from "../components/Navbar";
 import styled from "styled-components";
 import axios from "axios";
 import { Link } from "react-router-dom";
@@ -15,7 +16,7 @@ const Container = styled.div`
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
     ),
-    url("https://images.pexels.com/photos/6984650/pexels-photo-6984650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+    url("https://img.freepik.com/free-photo/breathtaking-shot-beautiful-stones-turquoise-water-lake-hills-background_181624-12847.jpg?w=2000")
       center;
   background-size: cover;
 `;
@@ -167,9 +168,9 @@ const Login = () => {
               value={data.password}
               required
             />
-            <Link to="/forgot-password" style={{ alignSelf: "flex-start" }}>
+            {/* <Link to="/forgot-password" style={{ alignSelf: "flex-start" }}>
               <p style={{ padding: "0 15px" }}>Forgot Password</p>
-            </Link>
+            </Link> */}
             {error && <ErrorMsg>{error}</ErrorMsg>}
             <GreenButton type="submit">Sing In</GreenButton>
           </FormContainer>

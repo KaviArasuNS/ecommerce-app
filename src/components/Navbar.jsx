@@ -90,7 +90,9 @@ const Navbar = ({ user }) => {
           </SearchContainer>
         </Left>
         <Center>
-          <Logo>KAVI.</Logo>
+          <Link to="/" style={{ textDecoration: "none", color: "black" }}>
+            <Logo>KAVI.</Logo>
+          </Link>
         </Center>
         <Right>
           {user ? (
